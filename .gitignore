@@ -1,0 +1,12 @@
+MOVIE/
+peliculas/
+series/
+ANIMES/
+
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.webm
+*.m4v
+*.ogv

@@ -1,0 +1,21 @@
+NEXORA RD PLAY - versión inicial mejorada
+
+1. Reemplaza los archivos index.html, styles.css y app.js de tu proyecto por estos.
+2. Abre index.html para probar la página.
+3. Para poner portadas, guarda imágenes JPG con estos nombres dentro de la carpeta posters:
+   tulsa-king.jpg
+   tierra-de-mafia.jpg
+   lake-crystal.jpg
+   loki.jpg
+   avengers-endgame-core.jpg
+4. Para probar reproducción, coloca videos autorizados dentro de videos con estos nombres:
+   tulsa-king.mp4
+   tierra-de-mafia.mp4
+   lake-crystal.mp4
+   loki.mp4
+   avengers-endgame-core.mp4
+
+IMPORTANTE:
+- El ZIP no incluye películas, series ni imágenes oficiales. Las tarjetas muestran portadas gráficas temporales hasta que agregues tus imágenes.
+- Usa únicamente videos e imágenes que tengas derecho o autorización para alojar y transmitir.
+- Los videos grandes no conviene subirlos a un hosting web básico; más adelante podemos configurar alojamiento de video adecuado.

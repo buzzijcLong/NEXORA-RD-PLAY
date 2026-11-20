@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NEXORA RD PLAY: películas, series y anime autorizados.">
+  <meta name="theme-color" content="#080912">
+  <title>NEXORA RD PLAY</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="NEXORA RD PLAY, inicio">
+      <span>NEXORA</span><b>RD PLAY</b>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a><a href="#peliculas">Películas</a>
+      <a href="#series">Series</a><a href="#anime">Anime</a><a href="#categorias">Categorías</a>
+    </nav>
+    <a class="profile" href="#catalogo" aria-label="Ir al catálogo">▶</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">TU NUEVO UNIVERSO DE ENTRETENIMIENTO</p>
+        <h1>Historias que<br><span>te hacen sentir.</span></h1>
+        <p class="intro">Películas, series y anime para descubrir en un solo lugar.</p>
+        <div class="actions">
+          <a class="btn primary" href="#catalogo">▶ Explorar catálogo</a>
+          <a class="btn secondary" href="#categorias">Ver categorías</a>
+        </div>
+        <p class="notice">Solo reproduce o distribuye contenido propio, de dominio público o con autorización de sus titulares.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb"></div><div class="screen">N<span>+</span></div><div class="glow"></div>
+      </div>
+    </section>
+
+    <section class="section" id="catalogo">
+      <div class="section-head">
+        <div><p class="eyebrow">SELECCIÓN NEXORA</p><h2>Tu catálogo</h2></div>
+        <label class="search-wrap"><span class="sr-only">Buscar títulos</span>
+          <input id="search" type="search" placeholder="Buscar película o serie..." autocomplete="off">
+        </label>
+      </div>
+      <div class="filter-row" id="categorias">
+        <button class="filter active" data-filter="todos">Todo</button>
+        <button class="filter" data-filter="pelicula">Películas</button>
+        <button class="filter" data-filter="serie">Series</button>
+        <button class="filter" data-filter="anime">Anime</button>
+      </div>
+
+      <div class="cards" id="cards">
+        <article class="movie" data-type="serie" data-title="Tulsa King">
+          <div class="poster poster-tulsa">
+            <img src="posters/tulsa-king.jpg" alt="Portada de Tulsa King" onerror="this.remove()">
+            <span class="poster-fallback">TULSA<br><strong>KING</strong><small>UNA NUEVA CORONA</small></span>
+            <span class="type-tag">SERIE</span>
+          </div>
+          <div class="movie-info"><div><h3>Tulsa King</h3><span>Drama · Crimen</span></div><button class="watch-btn" data-video="videos/tulsa-king.mp4" data-name="Tulsa King">Ver ahora</button></div>
+        </article>
+
+        <article class="movie" data-type="serie" data-title="Tierra de mafia">
+          <div class="poster poster-mafia">
+            <img src="posters/tierra-de-mafia.jpg" alt="Portada de Tierra de mafia" onerror="this.remove()">
+            <span class="poster-fallback">TIERRA<br><strong>DE MAFIA</strong><small>LEALTAD Y PODER</small></span>
+            <span class="type-tag">SERIE</span>
+          </div>
+          <div class="movie-info"><div><h3>Tierra de mafia</h3><span>Drama · Crimen</span></div><button class="watch-btn" data-video="videos/tierra-de-mafia.mp4" data-name="Tierra de mafia">Ver ahora</button></div>
+        </article>
+
+        <article class="movie" data-type="pelicula" data-title="Lake Crystal">
+          <div class="poster poster-crystal">
+            <img src="posters/lake-crystal.jpg" alt="Portada de Lake Crystal" onerror="this.remove()">
+            <span class="poster-fallback">LAKE<br><strong>CRYSTAL</strong><small>EL MISTERIO COMIENZA</small></span>
+            <span class="type-tag">PELÍCULA</span>
+          </div>
+          <div class="movie-info"><div><h3>Lake Crystal</h3><span>Misterio · Suspenso</span></div><button class="watch-btn" data-video="videos/lake-crystal.mp4" data-name="Lake Crystal">Ver ahora</button></div>
+        </article>
+
+        <article class="movie" data-type="serie" data-title="Loki">
+          <div class="poster poster-loki">
+            <img src="posters/loki.jpg" alt="Portada de Loki" onerror="this.remove()">
+            <span class="poster-fallback">LOKI<small>EL DIOS DE LAS HISTORIAS</small></span>
+            <span class="type-tag">SERIE</span>
+          </div>
+          <div class="movie-info"><div><h3>Loki</h3><span>Fantasía · Ciencia ficción</span></div><button class="watch-btn" data-video="videos/loki.mp4" data-name="Loki">Ver ahora</button></div>
+        </article>
+
+        <article class="movie" data-type="pelicula" data-title="Avengers Endgame Core">
+          <div class="poster poster-endgame">
+            <img src="posters/avengers-endgame-core.jpg" alt="Portada de Avengers: Endgame Core" onerror="this.remove()">
+            <span class="poster-fallback">AVENGERS<small>ENDGAME<br><b>CORE</b></small></span>
+            <span class="type-tag">PELÍCULA</span>
+          </div>
+          <div class="movie-info"><div><h3>Avengers: Endgame Core</h3><span>Acción · Ciencia ficción</span></div><button class="watch-btn" data-video="videos/avengers-endgame-core.mp4" data-name="Avengers: Endgame Core">Ver ahora</button></div>
+        </article>
+      </div>
+      <p class="empty-message" id="emptyMessage" hidden>No encontramos títulos con esa búsqueda.</p>
+    </section>
+
+    <section class="section" id="peliculas">
+      <div class="section-head"><div><p class="eyebrow">NOCHE DE CINE</p><h2>Películas</h2></div></div>
+      <p class="section-note">Encuentra aquí tus películas favoritas. Agrega las portadas y videos autorizados en las carpetas del proyecto.</p>
+    </section>
+
+    <section class="section" id="series">
+      <div class="series-banner">
+        <div><p class="eyebrow">SIGUE CADA HISTORIA</p><h2>Series para descubrir.</h2><p>Organiza tus series y, cuando tengas los archivos autorizados, agrega sus episodios.</p></div>
+        <div class="series-symbol" aria-hidden="true">N</div>
+      </div>
+    </section>
+
+    <section class="section" id="anime">
+      <div class="section-head"><div><p class="eyebrow">ANIMACIÓN Y AVENTURA</p><h2>Anime</h2></div></div>
+      <p class="section-note">Próximamente podrás agregar aquí tus títulos de anime autorizados.</p>
+    </section>
+  </main>
+
+  <div class="player-modal" id="playerModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="playerTitle">
+    <div class="player-panel">
+      <button class="close-player" id="closePlayer" aria-label="Cerrar reproductor">✕</button>
+      <p class="eyebrow">NEXORA RD PLAY</p><h2 id="playerTitle">Reproductor</h2>
+      <video id="videoPlayer" controls playsinline preload="metadata"></video>
+      <p id="playerMessage" class="player-message">Si tienes el video autorizado, colócalo en la carpeta videos con el nombre indicado.</p>
+    </div>
+  </div>
+
+  <footer>
+    <a class="brand" href="#inicio"><span>NEXORA</span><b>RD PLAY</b></a>
+    <p>© 2026 NEXORA RD PLAY · Proyecto en desarrollo.</p>
+    <small>Publica únicamente contenido propio, de dominio público o debidamente licenciado.</small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
